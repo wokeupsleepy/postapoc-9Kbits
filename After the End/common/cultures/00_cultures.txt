@@ -95,7 +95,7 @@ reference_culture = {
 		modifier = default_culture_modifier
 	}
 	chinese = {
-		graphical_cultures = { chinogfx westerngfx }
+		graphical_cultures = { chinesegfx mongolgfx westerngfx }
 		
 		used_for_random = no
 
