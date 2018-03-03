@@ -7,3 +7,5 @@ Adds a decision to form the Empire of America, similar to the vanilla "Form HRE"
 Adds additional "non canon" de jure empires to the blank portions of the map.
 
 Unlike normal After the End empires, most of the empires in this submod have not historically existed in the lore of the game and have no basis in any sort of history in the real world.
+
+Note: added compability with Judaism submod to this mod

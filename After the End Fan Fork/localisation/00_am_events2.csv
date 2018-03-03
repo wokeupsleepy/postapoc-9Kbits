@@ -1695,3 +1695,9 @@ form_the_empire_state_tooltip_2;If the Duchy of Raritan and the Duchy South Jers
 
 vassalize_knights_of_columbus;Vassalize the Knights of Columbus;;;;;;;;;;;;;x
 vassalize_knights_of_columbus_desc;As the Ruler of the Empire State, it is within my power to vassalize the powerful Knights of Columbus.;;;;;;;;;;;;;x
+
+vassalize_shomrim;Vassalize the Shomrim;;;;;;;;;;;;;x
+vassalize_shomrim_desc;As the Keyser of the Empire State, it is within my power to vassalize the powerful Shomrim.;;;;;;;;;;;;;x
+
+vassalize_grand_rebbe;Vassalize the Grand Rebbe;;;;;;;;;;;;;x
+vassalize_shomrim_desc;As the Keyser of the Empire State, it is within my power to vassalize the Grand Rebbe. However, doing this may reduce the Rebbe's legitimacy in the eyes of the Jewish people...;;;;;;;;;;;;;x

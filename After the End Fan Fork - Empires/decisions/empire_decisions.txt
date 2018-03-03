@@ -193,6 +193,7 @@ decisions = {
 			OR = {
 				culture = gothamite
 				culture = hudsonian
+				culture = yiddish
 			}
 			higher_tier_than = DUKE
 			e_usa = {
@@ -409,13 +410,87 @@ decisions = {
 				}
 			}
 		}
+	}
+	
+	vassalize_shomrim = {
+		is_high_prio = yes
 		
-		revoke_allowed = {
-			always = no
+		potential = {
+			religion_group = jewish_group
+			is_heretic = no
+			
+			is_title_active = d_shomrim
+			
+			has_landed_title = e_nys
+			
+			d_shomrim = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_shomrim }
+				}
+			}
 		}
 		
-		ai_will_do = {
-			factor = 1
+		allow = {
+			wealth = 500
+			piety = 2500
+			completely_controls = c_brooklyn
+		}
+		
+		effect = {
+			wealth = -500
+			piety = -50
+			d_shomrim = {
+				holder_scope = {
+					wealth = 500
+					ROOT = {
+						set_defacto_vassal = PREV
+					}
+				}
+			}
+		}
+	}
+	
+	vassalize_grand_rebbe = {
+		is_high_prio = yes
+		
+		potential = {
+			religion = jewish
+			
+			is_title_active = d_jewish
+			
+			has_landed_title = e_nys
+			
+			d_jewish = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_jewish }
+				}
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			piety = 5000
+			completely_controls = c_brooklyn
+		}
+		
+		effect = {
+			wealth = -500
+			piety = -2500
+			religion_authority = { modifier = vassalized_grand_rebbe }
 		}
 	}
 }
