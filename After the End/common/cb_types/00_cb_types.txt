@@ -2891,6 +2891,7 @@ crusade = {
 					}
 				}
 				religion = consumerist
+				religion = jewish
 			}
 			mercenary = no
 		}
